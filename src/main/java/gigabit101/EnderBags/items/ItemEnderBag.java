@@ -14,6 +14,7 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -100,7 +101,15 @@ public class ItemEnderBag extends Item implements IColorable
     public int getColorFromItemStack(ItemStack par1ItemStack, int par2)
     {
         if(par1ItemStack.getItemDamage() >= EnumDyeColor.values().length)
+        {
             return 0xFFFFFF;
+        }
         return EnumDyeColor.byMetadata(par1ItemStack.getItemDamage()).getMapColor().colorValue;
+    }
+
+    @Override
+    public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced)
+    {
+        tooltip.add(TextFormatting.DARK_PURPLE + "Can be colored in a crafting table with dye");
     }
 }
