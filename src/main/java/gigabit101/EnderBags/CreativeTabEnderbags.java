@@ -6,7 +6,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 /**
- * Created by Travis on 06/05/2016.
+ * Created by Gigabit101 on 06/05/2016.
  */
 
 public class CreativeTabEnderbags extends CreativeTabs
