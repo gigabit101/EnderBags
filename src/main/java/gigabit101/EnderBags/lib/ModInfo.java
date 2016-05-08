@@ -8,5 +8,5 @@ public class ModInfo
 {
     public static final String MOD_NAME = "EnderBags";
     public static final String MOD_ID = "EnderBags";
-    public static final String MOD_VERSION = "1.0.1";
+    public static final String MOD_VERSION = "1.0.2";
 }
